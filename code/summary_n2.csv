@@ -1,0 +1,5 @@
+Category,Count,Percentage,Avg F-stat,Std Dev F-stat
+RT Causality,18,5.2%,8.03,9.23
+TR Causality,31,9.0%,6.9,9.2
+Bidirectional,11,3.2%,9.9,4.78
+No Causality,286,82.7%,1.37,1.27

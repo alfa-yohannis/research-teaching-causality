@@ -1,0 +1,37 @@
+Metric,Category 1,Category 2,U Statistic,p-value,Significant (<0.05)
+avg_rank,No Causality,TR Causality,6100.0,0.8023,No
+avg_rank,No Causality,RT Causality,4333.0,0.3865,No
+avg_rank,No Causality,Bidirectional,2817.5,0.1036,No
+avg_rank,TR Causality,RT Causality,1031.0,0.5705,No
+avg_rank,TR Causality,Bidirectional,681.0,0.0872,Yes
+avg_rank,RT Causality,Bidirectional,544.0,0.0403,Yes
+avg_score,No Causality,TR Causality,6424.5,0.7316,No
+avg_score,No Causality,RT Causality,5237.5,0.28,No
+avg_score,No Causality,Bidirectional,1776.0,0.0868,Yes
+avg_score,TR Causality,RT Causality,1188.5,0.5428,No
+avg_score,TR Causality,Bidirectional,392.5,0.0736,Yes
+avg_score,RT Causality,Bidirectional,267.0,0.0286,Yes
+rt1_F,No Causality,TR Causality,5615.0,0.2544,No
+rt1_F,No Causality,RT Causality,1413.0,0.0,Yes
+rt1_F,No Causality,Bidirectional,565.0,0.0,Yes
+rt1_F,TR Causality,RT Causality,394.0,0.0,Yes
+rt1_F,TR Causality,Bidirectional,162.0,0.0,Yes
+rt1_F,RT Causality,Bidirectional,329.0,0.2162,No
+rt2_F,No Causality,TR Causality,5909.0,0.5481,No
+rt2_F,No Causality,RT Causality,1793.0,0.0,Yes
+rt2_F,No Causality,Bidirectional,431.0,0.0,Yes
+rt2_F,TR Causality,RT Causality,487.0,0.0,Yes
+rt2_F,TR Causality,Bidirectional,140.0,0.0,Yes
+rt2_F,RT Causality,Bidirectional,359.0,0.4378,No
+tr1_F,No Causality,TR Causality,1684.0,0.0,Yes
+tr1_F,No Causality,RT Causality,4999.0,0.571,No
+tr1_F,No Causality,Bidirectional,607.0,0.0,Yes
+tr1_F,TR Causality,RT Causality,1944.5,0.0,Yes
+tr1_F,TR Causality,Bidirectional,411.0,0.1178,No
+tr1_F,RT Causality,Bidirectional,104.0,0.0,Yes
+tr2_F,No Causality,TR Causality,1521.0,0.0,Yes
+tr2_F,No Causality,RT Causality,4647.5,0.8505,No
+tr2_F,No Causality,Bidirectional,481.0,0.0,Yes
+tr2_F,TR Causality,RT Causality,1938.0,0.0,Yes
+tr2_F,TR Causality,Bidirectional,518.0,0.7936,No
+tr2_F,RT Causality,Bidirectional,88.0,0.0,Yes

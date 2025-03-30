@@ -1,0 +1,186 @@
+\documentclass[conference]{IEEEtran}
+\IEEEoverridecommandlockouts
+% The preceding line is only needed to identify funding in the first footnote. If that is unneeded, please comment it out.
+%Template version as of 6/27/2024
+
+\usepackage[colorlinks=true, linkcolor=black, citecolor=blue, urlcolor=blue]{hyperref}
+
+\usepackage[table]{xcolor}
+
+\usepackage{multirow}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
+	T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
+\begin{document}
+
+%\title{Conference Paper Title*\\
+	%{\footnotesize \textsuperscript{*}Note: Sub-titles are not captured for https://ieeexplore.ieee.org  and
+		%should not be used}
+	%\thanks{Identify applicable funding agency here. If none, delete this.}
+	%}
+%
+%\author{\IEEEauthorblockN{1\textsuperscript{st} Given Name Surname}
+	%\IEEEauthorblockA{\textit{dept. name of organization (of Aff.)} \\
+		%\textit{name of organization (of Aff.)}\\
+		%City, Country \\
+		%email address or ORCID}
+	%\and
+	%\IEEEauthorblockN{2\textsuperscript{nd} Given Name Surname}
+	%\IEEEauthorblockA{\textit{dept. name of organization (of Aff.)} \\
+		%\textit{name of organization (of Aff.)}\\
+		%City, Country \\
+		%email address or ORCID}
+	%\and
+	%\IEEEauthorblockN{3\textsuperscript{rd} Given Name Surname}
+	%\IEEEauthorblockA{\textit{dept. name of organization (of Aff.)} \\
+		%\textit{name of organization (of Aff.)}\\
+		%City, Country \\
+		%email address or ORCID}
+	%\and
+	%\IEEEauthorblockN{4\textsuperscript{th} Given Name Surname}
+	%\IEEEauthorblockA{\textit{dept. name of organization (of Aff.)} \\
+		%\textit{name of organization (of Aff.)}\\
+		%City, Country \\
+		%email address or ORCID}
+	%\and
+	%\IEEEauthorblockN{5\textsuperscript{th} Given Name Surname}
+	%\IEEEauthorblockA{\textit{dept. name of organization (of Aff.)} \\
+		%\textit{name of organization (of Aff.)}\\
+		%City, Country \\
+		%email address or ORCID}
+	%\and
+	%\IEEEauthorblockN{6\textsuperscript{th} Given Name Surname}
+	%\IEEEauthorblockA{\textit{dept. name of organization (of Aff.)} \\
+		%\textit{name of organization (of Aff.)}\\
+		%City, Country \\
+		%email address or ORCID}
+	%}
+
+\title{Deriving IT Strategy from the Research-Teaching Causality of Times Higher Education Ranking}
+
+
+%\author{\IEEEauthorblockN{1\textsuperscript{st} Alfa Yohannis}
+%	\IEEEauthorblockA{\textit{Department of Informatics} \\
+%		\textit{Universitas Pradita}\\
+%		Tangerang, Indonesia \\
+%		alfa.ryano@gmail.com}
+%	\and
+%	\IEEEauthorblockN{2\textsuperscript{nd} Alexander Waworuntu}
+%	\IEEEauthorblockA{\textit{Department of Informatics} \\
+%		\textit{Universitas Multimedia Nusantara}\\
+%		Tangerang, Indonesia\\
+%	alex.wawo@umn.ac.id}
+%	\and
+%	\IEEEauthorblockN{3\textsuperscript{rd} Master Edison Siregar}
+%	\IEEEauthorblockA{\textit{Department of Informatics} \\
+%		\textit{Universitas Pradita}\\
+%		Tangerang, Indonesia \\
+%		master.edison@pradita.ac.id}
+%	%\and
+%	%\IEEEauthorblockN{4\textsuperscript{th} Given Name Surname}
+%	%\IEEEauthorblockA{\textit{dept. name of organization (of Aff.)} \\
+%		%\textit{name of organization (of Aff.)}\\
+%		%City, Country \\
+%		%email address or ORCID}
+%	%\and
+%	%\IEEEauthorblockN{5\textsuperscript{th} Given Name Surname}
+%	%\IEEEauthorblockA{\textit{dept. name of organization (of Aff.)} \\
+%		%\textit{name of organization (of Aff.)}\\
+%		%City, Country \\
+%		%email address or ORCID}
+%	%\and
+%	%\IEEEauthorblockN{6\textsuperscript{th} Given Name Surname}
+%	%\IEEEauthorblockA{\textit{dept. name of organization (of Aff.)} \\
+%		%\textit{name of organization (of Aff.)}\\
+%		%City, Country \\
+%		%email address or ORCID}
+%	}
+
+ \author{\textbf{[Hidden for double-blind review]}}
+%\author{\IEEEauthorblockN{
+%		Alfa Yohannis%\IEEEauthorrefmark{1}
+%		\IEEEauthorrefmark{2},
+%		Master Edison Siregar%\IEEEauthorrefmark{1}%\IEEEauthorrefmark{3}
+%	}
+%	\IEEEauthorblockA{
+%		% \IEEEauthorrefmark{1}
+%		Hidden for Double-blind Review
+%		Department of Informatics\\
+%		Pradita University, Tangerang, Indonesia\\
+%		\IEEEauthorrefmark{2}alfa.ryano@pradita.ac.id}
+%	% 	% \IEEEauthorblockA{
+%		% 	% 	\IEEEauthorrefmark{2}Department of Computer Science\\
+%		% 	% 	University of York, York, United Kingdom}
+%}
+
+\newcommand{\al}[1]{{\textbf{\color{blue} Al: #1}}}
+
+\maketitle
+
+\begin{abstract}
+	This study explores the correlations among key metrics from the Times Higher Education (THE) rankings over a 10-year period to derive actionable IT strategies for universities. Using rigorous analysis, including non-parametric correlation, the research identifies the most influential variables affecting institutional performance, such as research and teaching scores, citations, and internationalisation. The findings underscore the importance of aligning IT investments with these critical areas to enhance institutional rankings and competitiveness. Based on the analysis, targeted IT strategies are recommended to support the performance of higher education institutions based on the influential variables.
+\end{abstract}
+
+\begin{IEEEkeywords}
+	IT Strategy, Higher Education, Times Higher Education Rankings, Correlation Analysis
+\end{IEEEkeywords}
+
+
+\section{Introduction}
+
+
+The role of Information Technology (IT) strategy has become increasingly significant across various sectors, including Higher Education \cite{hashim2021higher}. In an era 
+
+
+\section{Results and Discussion}
+
+
+\begin{table*}
+	\centering
+	\caption{Summary of Causality Results (p-value $\leq 0.05$, total $n=346$). RT: Research $\rightarrow$ Teaching, TR: Teaching $\rightarrow$ Research, Bi: Bidirectional, Bi-RT: Bidirectional RT-first, Bi-TR: Bidirectional TR-first, None: No Causality. Results are shown for lag orders $L=1$ and $L=2$, where $L$ is the lag order in Granger causality test.}
+	\begin{tabular}{|l|r|r|r|r|r|r|r|r|r|r|r|r|}
+		\hline
+		\multirow{2}{*}{\textbf{Category}} 
+		& \multicolumn{6}{c|}{$L=1$} 
+		& \multicolumn{6}{c|}{$L=2$} \\ \cline{2-13}
+		& \textbf{Count} & \textbf{\%} & \textbf{Avg F} & \textbf{Std F} & \textbf{Med F} & \textbf{Min--Max F} 
+		& \textbf{Count} & \textbf{\%} & \textbf{Avg F} & \textbf{Std F} & \textbf{Med F} & \textbf{Min--Max F} \\ \hline
+		\textbf{RT}     & 27  & 7.8\%  & 5.92  & 9.34  & 4.67  & 0.00--64.07  & 18  & 5.2\%  & 8.03  & 9.23  & 4.96  & 0.13--41.29 \\ \hline
+		\textbf{TR}     & 37  & 10.7\% & 5.90  & 8.22  & 5.09  & 0.00--67.24  & 31  & 9.0\%  & 6.90  & 9.20  & 5.80  & 0.01--61.82 \\ \hline
+		\textbf{Bi}     & 11  & 3.2\%  & 13.70 & 5.99  & 11.56 & 6.24--28.04  & 11  & 3.2\%  & 9.90  & 4.78  & 8.57  & 5.61--27.33 \\ \hline
+		\hfill Bi-RT  &   &   & 13.44 & 5.09  & 11.27 & 7.49--24.07  & 11  & 3.2\%  & 8.26  & 1.84  & 8.31  & 6.00--12.26 \\ \hline
+		\hfill Bi-TR  &   &   & 13.96 & 6.76  & 14.20 & 6.24--28.04  & 11  & 3.2\%  & 11.55 & 6.07  & 9.31  & 5.61--27.33 \\ \hline
+		\textbf{None}   & 271 & 78.3\% & 1.17  & 1.37  & 0.56  & 0.00--5.61   & 286 & 82.7\% & 1.37  & 1.27  & 1.04  & 0.00--6.85  \\ \hline
+	\end{tabular}
+\end{table*}
+
+\begin{table}
+	\centering
+	\caption{Summary of Combined Causality Results (p-value $\leq 0.05$, total $n=346$). RT: Research $\rightarrow$ Teaching, TR: Teaching $\rightarrow$ Research, Bi: Bidirectional, Bi-RT: Bidirectional RT-first, Bi-TR: Bidirectional TR-first, None: No Causality.}
+	\begin{tabular}{|l|r|r|r|r|r|r|r|}
+		\hline
+		\textbf{Category} & \textbf{Count} & \textbf{\%} & \textbf{Avg F} & \textbf{Std F} & \textbf{Med F} & \textbf{Min F} & \textbf{Max F} \\ \hline
+		\textbf{RT}               & 41  & 11.8\% & 4.24  & 7.48  & 1.69  & 0.00  & 64.07 \\ \hline
+		\textbf{TR}               & 54  & 15.6\% & 4.24  & 5.96  & 2.28  & 0.00  & 61.82 \\ \hline
+		\textbf{Bi}               & 20  & 5.8\%  & 8.55  & 9.15  & 6.54  & 0.02  & 67.24 \\ \hline
+		\hfill Bi-RT            &   &   & 7.21  & 5.50  & 6.77  & 0.18  & 24.07 \\ \hline
+		\hfill Bi-TR            &   &   & 9.90  & 11.56 & 6.50  & 0.02  & 67.24 \\ \hline
+		\textbf{None}             & 231 & 66.8\% & 1.21  & 1.28  & 0.76  & 0.00  & 6.85  \\ \hline
+	\end{tabular}
+\end{table}
+
+
+
+\section*{Acknowledgement}
+
+This research used Artificial Intelligence (AI) to assist in script development for scraping, data analysis, and summarisation. The structure and flow of this paper were drafted by the authors, while AI supported grammar checking, wording, and sentencing. The final version was refined to ensure clarity, coherence, and alignment with research objectives.
+
+\bibliography{references}
+\bibliographystyle{IEEEtran}
+
+\end{document}
