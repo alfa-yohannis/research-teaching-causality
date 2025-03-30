@@ -215,3 +215,4 @@ def mann_whitney_tests(metric):
 
 mann_whitney_tests('avg_score')
 mann_whitney_tests('avg_rank')
+
