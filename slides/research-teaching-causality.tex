@@ -1,0 +1,227 @@
+\documentclass[aspectratio=169, table]{beamer}
+
+%\usepackage[beamertheme=./praditatheme]{Pradita}
+\usepackage[utf8]{inputenc}
+\usepackage{xcolor} % for color
+\usepackage{colortbl} % for table color
+\usepackage{multirow}
+
+\usetheme{Pradita}
+%
+\subtitle{the 2025 4th International Conference on\\Electronics Representation and Algorithm (ICERA)}
+
+\title{Deriving IT Strategy from the Research-\\Teaching Causality of Times Higher\\Education Rankings}
+\date[Serial]{\scriptsize {STMIK El Rahma, Yogyakarta, 12 June 2025}}
+\author[Pradita]{\footnotesize{\textbf{Alfa Yohannis, Alexander Waworuntu, Januponsa Dio Firzqi}}}
+
+\begin{document}
+
+\frame{\titlepage}
+
+\begin{frame}[fragile]
+\frametitle{Contents}
+\vspace{20pt}
+\begin{columns}[t]
+\column{0.5\textwidth}
+\tableofcontents[sections={1-4}]
+
+\column{0.5\textwidth}
+\tableofcontents[sections={5-10}]
+\end{columns}
+\end{frame}
+
+\section{Introduction}
+
+\begin{frame}[fragile]{Research Motivation}
+	\vspace{20pt}
+	
+	\begin{itemize}
+		\item Universities aim to excel in both \textbf{teaching} and \textbf{research}.
+		\item Their relationship is debated: synergy or conflict?
+		\item Existing policies often treat them as separate domains.
+		\item There is a need for \textbf{evidence-based strategies} to align both effectively.
+	\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]{Research Questions}
+	\vspace{20pt}
+	\begin{itemize}
+		\item Do teaching and research influence each other over time?
+		\item What causal patterns exist across institutions?
+		\item Can IT strategies help align and strengthen both domains?
+	\end{itemize}
+\end{frame}
+
+\section{Background}
+
+\begin{frame}[fragile]{Related Work Summary}
+	\vspace{20pt}
+	\begin{itemize}
+		\item Past findings vary: conflict (Maisano et al., 2023) vs. synergy (Himanka, 2024).
+		\item Most studies focus on correlation, not causality.
+		\item Post-pandemic calls for integration (Hordósy \& McLean, 2022).
+		\item Lack of \textbf{actionable strategies} derived from empirical analysis.
+	\end{itemize}
+\end{frame}
+
+\section{Methodology}
+
+\begin{frame}[fragile]{Methodology}
+	\vspace{20pt}
+	\begin{itemize}
+		\item \textbf{Dataset}: Times Higher Education (THE) Rankings, 2011–2023
+		\\variables---overall score, rank,
+		research score, teaching score, citations score, intl students,
+		international outlook score, student staff ratio, industry income
+		score, number students, and year.
+		\item \textbf{Sample}: 346 universities with $\geq$ 10 years of data.
+		\item \textbf{Method}: Granger Causality Test with Lag = 1 and 2.
+		\item \textbf{Categories}:
+		\begin{itemize}
+			\item RT: Research $\rightarrow$ Teaching
+			\item TR: Teaching $\rightarrow$ Research
+			\item Bi: Bidirectional
+			\item None: No causality
+		\end{itemize}
+	\end{itemize}
+\end{frame}
+
+\section{Results and Analysis}
+
+
+\begin{frame}[fragile]{\Large{Granger Causality Summary (L = 1, L = 2, and Combined)}}
+	\vspace{20pt}
+	\arrayrulecolor{black}
+	\setlength{\arrayrulewidth}{0.3pt}
+	\begin{center}
+		\begin{tabular}{|l|r|r|r|r|r|r|}
+			\hline
+			\multirow{2}{*}{\textbf{Category}} 
+			& \multicolumn{2}{c|}{$L=1$} 
+			& \multicolumn{2}{c|}{$L=2$} 
+			& \multicolumn{2}{c|}{Combined} \\ \cline{2-7}
+			& \textbf{Count} & \textbf{\%}
+			& \textbf{Count} & \textbf{\%}
+			& \textbf{Count} & \textbf{\%} \\ \hline
+			\textbf{RT}     & 27  & 7.8\%  & 18  & 5.2\%  & 41  & 11.8\% \\ \hline
+			\textbf{TR}     & 37  & 10.7\% & 31  & 9.0\%  & 54  & 15.6\% \\ \hline
+			\textbf{Bi}     & 11  & 3.2\%  & 11  & 3.2\%  & 20  & 5.8\%  \\ \hline
+			\textbf{None}   & 271 & 78.3\% & 286 & 82.7\% & 231 & 66.8\% \\ \hline
+		\end{tabular}
+	\end{center}
+	
+	\vspace{10pt}
+	Summary of Granger causality classifications across $L=1$, $L=2$, and their union ($p$-value $\leq 0.05$, $n=346$). RT: Research $\rightarrow$ Teaching, TR: Teaching $\rightarrow$ Research, Bi: Bidirectional, None: No Causality.
+\end{frame}
+
+
+\begin{frame}[fragile]{Average Rank and Score by Causality Category}
+	\vspace{20pt}
+	\arrayrulecolor{black}
+	\setlength{\arrayrulewidth}{0.3pt}
+	\begin{center}
+		\begin{tabular}{|l|r|r|r|r|r||r|r|r|r|r|}
+			\hline
+			\multirow{2}{*}{\textbf{Cate}} 
+			& \multicolumn{5}{c||}{\textbf{Rank}} 
+			& \multicolumn{5}{c|}{\textbf{Score}} \\ \cline{2-11}
+			& \textbf{Avg} & \textbf{Std} & \textbf{Med} & \textbf{Min} & \textbf{Max}
+			& \textbf{Avg} & \textbf{Std} & \textbf{Med} & \textbf{Min} & \textbf{Max} \\ \hline
+			\textbf{RT}   & 261.3 & 163.1 & 236.5 & 5.1   & 820.9 & 51.1 & 13.1 & 48.0 & 37.2 & 93.5 \\ \hline
+			\textbf{TR}   & 242.8 & 155.5 & 223.2 & 2.4   & 678.4 & 52.7 & 14.0 & 48.8 & 37.2 & 94.6 \\ \hline
+			\textbf{Bi}   & 175.6 & 123.1 & 135.6 & 14.5  & 498.9 & 56.8 & 12.3 & 55.5 & 41.8 & 86.0 \\ \hline
+			\textbf{None} & 242.7 & 169.6 & 207.4 & 2.2   & 749.1 & 52.8 & 12.6 & 50.1 & 37.4 & 94.5 \\ \hline
+		\end{tabular}
+	\end{center}
+	
+	\vspace{8pt}
+	Summary of Combined Causality Results for average institutional rank and overall score ($p$-value $\leq 0.05$, $n=346$). RT: Research $\rightarrow$ Teaching, TR: Teaching $\rightarrow$ Research, Bi: Bidirectional, None: No Causality.
+\end{frame}
+
+
+
+
+\begin{frame}[fragile]{Mann-Whitney U Test for Ranks and Scores}
+	\vspace{20pt}
+	
+	The Mann-Whitney U test shows significant differences in rank and score across causality types:
+	
+	\begin{itemize}
+		\item \textbf{Bidirectional (Bi)} institutions rank and score higher than both \textbf{RT} ($p \leq 0.05$) and \textbf{TR} ($p \leq 0.10$).
+		\item \textbf{RT} and \textbf{TR} perform significantly worse than \textbf{Bi}, with TR showing slightly weaker significance.
+		\item \textbf{None} also ranks and scores lower than \textbf{Bi} ($p \leq 0.10$).
+		\item No significant differences were found between \textbf{RT}, \textbf{TR}, and \textbf{None} among themselves.
+	\end{itemize}
+	
+	Institutions with bidirectional causality between teaching and research tend to perform better overall.
+\end{frame}
+
+
+
+
+
+%\begin{frame}[fragile]{Significance Testing}
+%	\vspace{20pt}
+%	\begin{itemize}
+%		\item Mann-Whitney U test confirms performance ranking:
+%		\begin{itemize}
+%			\item Bidirectional $>$ TR $>$ RT $>$ None
+%		\end{itemize}
+%		\item F-statistics strongest in bidirectional institutions.
+%		\item Stronger causality corresponds with higher performance.
+%	\end{itemize}
+%\end{frame}
+
+\section{Discussion and IT Strategy Recommendations}
+
+\begin{frame}[fragile]{Strategic Implications and IT Strategies}
+	\vspace{20pt}
+	\begin{columns}[t]
+		\column{0.48\textwidth}
+		\textbf{Strategic Implications}
+		\begin{itemize}
+			\item Most universities separate teaching and research.
+			\item Bidirectional cases show \textbf{mutual reinforcement}.
+			\item Institutions should realign policy from separation to \textbf{strategic integration}.
+		\end{itemize}
+		
+		\column{0.48\textwidth}
+		\textbf{Proposed IT Strategies}
+		\begin{enumerate}
+			\item Unified LMS + Research Platforms
+			\item Collaborative tools for faculty interaction
+			\item Personalised student pathways linked to research
+			\item Data-driven dashboards for planning
+			\item Scalable cloud-based infrastructure
+			\item Faculty training on IT tools
+			\item Cross-disciplinary research-teaching networks
+		\end{enumerate}
+	\end{columns}
+\end{frame}
+
+
+\section{Conclusion}
+
+\begin{frame}[fragile]{Conclusion}
+	\vspace{20pt}
+	\begin{itemize}
+		\item Most universities show \textbf{no causal link} between teaching and research.
+		\item \textbf{Teaching $\rightarrow$ Research} more frequent than the reverse.
+		\item Bidirectional cases have the \textbf{best scores and ranks}.
+		\item \textbf{IT strategies} can bridge and enhance both domains.
+		\item Institutions should \textbf{invest in integration via technology}.
+	\end{itemize}
+\end{frame}
+%
+%
+%%\section{Pola Perilaku Lanjutan}
+%%
+%%\section{Pola Mediator}
+%%\begin{frame}{\hfill}
+%%	\centering
+%%	\textbf{\Huge{Pola Mediator}}
+%%\end{frame}
+
+
+
+\end{document}

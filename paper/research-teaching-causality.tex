@@ -3,7 +3,8 @@
 % The preceding line is only needed to identify funding in the first footnote. If that is unneeded, please comment it out.
 %Template version as of 6/27/2024
 
-\usepackage[colorlinks=true, linkcolor=black, citecolor=blue, urlcolor=blue]{hyperref}
+%\usepackage[colorlinks=true, linkcolor=black, citecolor=blue, urlcolor=blue]{hyperref}
+\usepackage{url}
 
 \usepackage[table]{xcolor}
 
@@ -61,26 +62,26 @@
 		%email address or ORCID}
 	%}
 
-\title{Deriving IT Strategy from the Research-Teaching Causality of Times Higher Education Ranking}
+\title{Deriving IT Strategy from the Research-Teaching Causality of Times Higher Education Rankings}
 
 
-%\author{\IEEEauthorblockN{1\textsuperscript{st} Alfa Yohannis}
-%	\IEEEauthorblockA{\textit{Department of Informatics} \\
-%		\textit{Universitas Pradita}\\
-%		Tangerang, Indonesia \\
-%		alfa.ryano@gmail.com}
-%%	\and
-%%	\IEEEauthorblockN{2\textsuperscript{nd} Alexander Waworuntu}
-%%	\IEEEauthorblockA{\textit{Department of Informatics} \\
-%%		\textit{Universitas Multimedia Nusantara}\\
-%%		Tangerang, Indonesia\\
-%%	alex.wawo@umn.ac.id}
-%%	\and
-%%	\IEEEauthorblockN{3\textsuperscript{rd} Master Edison Siregar}
-%%	\IEEEauthorblockA{\textit{Department of Informatics} \\
-%%		\textit{Universitas Pradita}\\
-%%		Tangerang, Indonesia \\
-%%		master.edison@pradita.ac.id}
+\author{\IEEEauthorblockN{1\textsuperscript{st} Alfa Yohannis}
+	\IEEEauthorblockA{\textit{Department of Informatics} \\
+		\textit{Universitas Pradita}\\
+		Tangerang, Indonesia \\
+		alfa.ryano@gmail.com}
+	\and
+	\IEEEauthorblockN{2\textsuperscript{nd} Alexander Waworuntu}
+	\IEEEauthorblockA{\textit{Department of Informatics} \\
+		\textit{Universitas Multimedia Nusantara}\\
+		Tangerang, Indonesia\\
+		alex.wawo@umn.ac.id}
+	\and
+	\IEEEauthorblockN{3\textsuperscript{rd} Januponsa Dio Firzqi}
+	\IEEEauthorblockA{\textit{Department of Informatics} \\
+		\textit{Universitas Pradita}\\
+		Tangerang, Indonesia \\
+		januponsa.dio@pradita.ac.id}
 %%	%\and
 %%	%\IEEEauthorblockN{4\textsuperscript{th} Given Name Surname}
 %%	%\IEEEauthorblockA{\textit{dept. name of organization (of Aff.)} \\
@@ -101,7 +102,7 @@
 %%		%email address or ORCID}
 %	}
 
- \author{\textbf{[Hidden for double-blind review]}}
+% \author{\textbf{[Hidden for double-blind review]}}
 %\author{\IEEEauthorblockN{
 %		Alfa Yohannis%\IEEEauthorrefmark{1}
 %		\IEEEauthorrefmark{2},
@@ -116,18 +117,18 @@
 %	% 	% \IEEEauthorblockA{
 %		% 	% 	\IEEEauthorrefmark{2}Department of Computer Science\\
 %		% 	% 	University of York, York, United Kingdom}
-%}
+}
 
 \newcommand{\al}[1]{{\textbf{\color{blue} Al: #1}}}
 
 \maketitle
 
 \begin{abstract}
-This study explores the causal relationship between teaching and research performance in universities using Granger causality analysis. By analysing data from the Times Higher Education (THE) Ranking, the research aims to determine whether teaching and research influence each other or operate independently. The findings suggest that, while the majority of universities show no significant causality between the two, a smaller proportion exhibit unidirectional causality, with teaching having a slightly stronger influence on research. Furthermore, a few universities demonstrate bidirectional causality, where mutual reinforcement between teaching and research leads to stronger academic performance. The results highlight the importance of integrating teaching and research through strategic IT solutions to improve university outcomes. Based on these findings, the paper proposes several IT strategies to foster better alignment and integration of teaching and research activities.
+This study investigates the causal relationship between teaching and research performance in universities by applying Granger causality analysis to longitudinal data from the \textit{Times Higher Education} (THE) Ranking. The objective is to assess whether these two core functions influence one another or operate independently across institutions. The results reveal that most universities exhibit no statistically significant causality, suggesting that teaching and research often develop in parallel without direct influence. However, a notable minority show unidirectional causality, with evidence that teaching performance more frequently predicts improvements in research outcomes than the reverse. In some cases, bidirectional causality is identified, indicating a mutually reinforcing relationship where strong performance in one domain supports growth in the other. These findings underscore the value of strategic integration between teaching and research to enhance overall institutional effectiveness. To address this, the study proposes a set of IT strategies aimed at aligning these functions, such as shared data platforms, collaborative knowledge systems, and integrated performance dashboards. Such solutions can help break down organisational silos, promote evidence-based planning, and support synergies that benefit both teaching quality and research productivity. Ultimately, the paper highlights the potential of information technology as a critical enabler in advancing the dual mission of higher education institutions.
 \end{abstract}
 
 \begin{IEEEkeywords}
-Teaching and Research, Granger Causality, University Performance, IT Strategy, Higher Education
+teaching, research, Granger causality, IT strategy, higher education
 \end{IEEEkeywords}
 
 
@@ -187,8 +188,8 @@ For each causality category, a summary of the Granger F-statistics was generated
 To assess the significance of differences between the causality categories, the Mann-Whitney U test \cite{mann1947test} was employed. This non-parametric test was used to compare the distributions of F-statistics, average rank, and overall score between pairs of causality categories, as the normality assumption does not necessarily hold in the dataset. 
 
 The full analysis workflow was implemented in Python. The source code and dataset used in this study are openly available for reproducibility\footnote{Code and data can be accessed at:
-		[hidden for double-blind review]
-%	\url{https://github.com/alfa-yohannis/research-teaching-causality}
+%		[hidden for double-blind review]
+	\url{https://github.com/alfa-yohannis/research-teaching-causality}
 }.
 
 
@@ -221,7 +222,8 @@ The full analysis workflow was implemented in Python. The source code and datase
 \end{table*}
 
 
-The results of the Granger causality analysis are summarised in Table~\ref{tab:summary_causality}. The analysis shows that most universities exhibit no significant causal relationship between research and teaching scores, with 78.3\% of universities showing no causality at lag order $L=1$ and 82.7\% at $L=2$. This suggests that for most universities, teaching and research scores evolve independently over time. However, the proportion of universities with no causality increases at $L=2$, indicating that the relationship weakens as the time lag increases. This pattern suggests that short-term causal influences are more likely than long-term ones, as the effect of research on teaching, or vice versa, diminishes over time.
+The results of the Granger causality analysis are summarised in Table~\ref{tab:summary_causality}. The analysis shows that most universities exhibit no significant causal relationship between research and teaching scores, with 78.3\% of universities showing no causality at lag order $L=1$ and 82.7\% at $L=2$. Here, lag order $L$ refers to the number of past years considered when testing for causality. This suggests that for most universities, teaching and research scores evolve independently over time. However, the proportion of universities with no causality increases at $L=2$, indicating that the relationship weakens as the time lag increases. This pattern suggests that short-term causal influences are more likely than long-term ones, as the effect of research on teaching, or vice versa, diminishes over time.
+
 
 Unidirectional causality was observed in a smaller proportion of cases. At lag order $L=1$, 7.8\% of universities showed research $\rightarrow$ teaching (RT) causality, while 10.7\% exhibited teaching $\rightarrow$ research (TR) causality. These proportions decreased at $L=2$, with 5.2\% showing RT causality and 9.0\% showing TR causality. The weakening of unidirectional causality at $L=2$ suggests that short-term relationships are more pronounced but tend to fade over time. Despite this, teaching still shows a slightly stronger tendency to influence research, as evidenced by the higher percentage of TR causality compared to RT causality at both lag orders.
 
@@ -374,9 +376,9 @@ This study investigates the causal relationship between research and teaching pe
 Future research could explore additional factors such as university funding, faculty quality, and research infrastructure, which may influence the relationship between teaching and research. Extending the time horizon of the dataset and exploring alternative causality methods could provide deeper insights. Further studies could also focus on case studies of universities with bidirectional causality to uncover best practices for effectively integrating teaching and research, offering practical strategies for academic institutions.
 
 
-\section*{Acknowledgement}
+\section*{Acknowledgment}
+AI tools assisted in script development, data analysis, and language refinement. The paper’s structure was drafted by the authors and finalised for clarity and alignment with research goals. This publication is supported by Pradita University through the International Conference Grant Scheme.
 
-This research used Artificial Intelligence (AI) to assist in script development for scraping, data analysis, and summarisation. The structure and flow of this paper were drafted by the authors, while AI supported grammar checking, wording, and sentencing. The final version was refined to ensure clarity, coherence, and alignment with research objectives.
 
 \bibliography{references}
 \bibliographystyle{IEEEtran}
